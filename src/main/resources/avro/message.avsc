@@ -1,0 +1,11 @@
+{
+  "namespace": "lendup.avro.schema.greensight",
+  "type": "record",
+  "name": "RuleGroupMessage_v1",
+  "fields": [
+    { "name": "header", "type": { "type": "map", "values": "string" } },
+
+    { "name": "ruleGroups", "type": { "type": "array", "items": "string" } },
+    { "name": "context", "type": { "type": "array", "items": { "type": "map", "values": { "type": "map", "values": "string" } } } }
+  ]
+}
